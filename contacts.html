@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="style.css">
+	<title>Напишите нам</title>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+		<header>			
+			<a href="index.html"><img id="logo" src="img/logo.png" alt="лого"></a>
+		</header>
+			<ul class="menu">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="catalog/catalog.html">Каталог</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>		
+		</div>
+		<h1>Напишите нам</h1>
+		<hr>
+		<div class="main-content">
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Заполните форму</legend>
+					<div>
+						<label>
+						<input type="text" placeholder="Ваше имя" required> 
+						</label>
+					</div>
+					<div>
+						<label for="E-mail">
+						<input id="E-mail" type="email" placeholder="E-mail" required>
+						</label>
+					</div>
+					<div>
+						<label for="Тема">
+						<input id="Тема" type="text" placeholder="Тема" required>
+						</label>
+					</div>
+					
+						<textarea name="Сообщение" id="txt" cols="30" rows="10" placeholder="Текст сообщения" required></textarea>
+				</fieldset>
+				<fieldset>
+					<legend>Оцените наш магазин</legend>
+					<div>
+						<input type="radio" name="rating">1
+						<input type="radio" name="rating">2
+						<input type="radio" name="rating">3
+						<input type="radio" name="rating">4
+						<input type="radio" name="rating">5
+					</div>
+				</fieldset>
+					<div>
+						<input type="submit" value="Отправить">
+						<input type="reset" value="Очистить">
+					</div>
+			</form>
+		<!--Микроразметка-->
+		<div itemscope itemtype="http://schema.org/Organization">
+			<span itemprop="name">Туристический магазин</span>
+			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Адрес:
+				<span itemprop="addressLocality"> Приморский край, Владивосток</span>
+				<span itemprop="streetAddress">ул. Хабаровская , 3</span>
+				<span itemprop="postalCode">690078</span>
+			</div>
+			Телефон:<span itemprop="telephone"> +7(423)258-96-35</span>
+			Электронная почта: <span itemprop="email">turist@mag.ru</span>	
+		</div>
+		<!-- -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.6956920783646!2d131.8883182151163!3d43.13191847914256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb3921da6edd997%3A0xf66ae2c0c43122f9!2z0KXQsNCx0LDRgNC-0LLRgdC60LDRjyDRg9C7LiwgMywg0JLQu9Cw0LTQuNCy0L7RgdGC0L7Quiwg0J_RgNC40LzQvtGA0YHQutC40Lkg0LrRgNCw0LksIDY5MDA3OA!5e0!3m2!1sru!2sru!4v1498305640827"  allowfullscreen></iframe>
+		</div>
+		<hr>
+		<footer>
+		<div itemscope itemtype="http://schema.org/Organization">
+			<span itemprop="name">Туристический магазин</span>
+			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Адрес:
+				<span itemprop="addressLocality"> Приморский край, Владивосток</span>
+				<span itemprop="streetAddress">ул. Хабаровская , 3</span>
+				<span itemprop="postalCode">690078</span>
+			</div>
+			Телефон:<span itemprop="telephone"> +7(423)258-96-35</span>
+			Электронная почта: <span itemprop="email">turist@mag.ru</span>	
+		</div>
+			<p class="copyright">&copy; &laquo;Все права защищены&raquo;</p>
+		</footer>
+	</div>
+</body>
+</html>
